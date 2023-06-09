@@ -5,7 +5,7 @@ config:
       branch: master
       repo: https://code-repo.d4science.org/MaDgIK/openaire-library.git
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.9
+      branch: release/1.7.11
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,28 +15,28 @@ sqa_criteria:
     repos:
       code-repo.d4science.org/MaDgIK/openaire-library git:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-smalt-binturong.sh
-        container: qc.acc_scanty-cinnamon-guppy
+        - /usr/bin/env sh .sqa/script.skanky-grey-otter.sh
+        container: qc.acc_lumpy-sangria-guppy
   QC.Doc:
     repos:
       code-repo.d4science.org/MaDgIK/openaire-library find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-heliotrope-butterfly.sh
-        container: qc.doc_tacky-carmine-jaguar
+        - /usr/bin/env sh .sqa/script.homely-salmon-baboon.sh
+        container: qc.doc_surly-amethyst-cockroach
       code-repo.d4science.org/MaDgIK/openaire-library git:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-seashell-eagle.sh
-        container: qc.doc_greasy-indigo-coyote
+        - /usr/bin/env sh .sqa/script.wiggy-orchid-oyster.sh
+        container: qc.doc_messy-gold-seal
   QC.Lic:
     repos:
       code-repo.d4science.org/MaDgIK/openaire-library licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.woozy-malachite-rat.sh
-        container: qc.lic_pasty-smalt-cuttlefish
+        - /usr/bin/env sh .sqa/script.sleepy-lime-kingfisher.sh
+        container: qc.lic_craggy-puce-leopard
   QC.Ver:
     repos:
       code-repo.d4science.org/MaDgIK/openaire-library get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.silly-apricot-serval.sh
-        container: qc.ver_pretty-smalt-lobster
+        - /usr/bin/env sh .sqa/script.skimpy-myrtle-horse.sh
+        container: qc.ver_woolly-carmine-bear
 timeout: 5400
